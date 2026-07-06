@@ -240,24 +240,24 @@
   /* ---------- scene 4: dinosaur ---------- */
   .dino-intro {
     font-family: 'Special Elite', monospace;
-    font-size: 13.5px;
-    line-height: 2;
+    font-size: 12.5px;
+    line-height: 1.65;
     color: rgba(245,236,217,0.9);
     max-width: 420px;
-    margin-bottom: 6px;
+    margin-bottom: 0;
   }
   .dino-intro .species {
     display: block;
     font-family: 'Cinzel', serif;
-    font-size: clamp(22px, 6vw, 32px);
+    font-size: clamp(20px, 5.5vw, 30px);
     font-weight: 900;
     color: #8fd694;
     letter-spacing: 3px;
-    margin: 10px 0;
+    margin: 8px 0 6px;
     text-shadow: 0 0 26px rgba(143,214,148,0.35);
   }
-  #dino-stage { position: relative; margin-top: 8px; cursor: pointer; }
-  #dino-svg { width: min(240px, 60vw); height: auto; transition: transform 0.2s; }
+  #dino-stage { position: relative; margin-top: 4px; cursor: pointer; }
+  #dino-svg { width: min(200px, 46vw); height: auto; transition: transform 0.2s; }
   #dino-stage:active #dino-svg { transform: scale(0.95); }
   #dino-stage.dance #dino-svg { animation: dinoDance 0.6s ease 2; }
   @keyframes dinoDance {
@@ -280,12 +280,15 @@
   }
   #dino-bubble.show { transform: translateX(-50%) scale(1); }
   .tap-hint {
-    margin-top: 14px;
+    margin-top: 8px;
     font-family: 'Caveat', cursive;
-    font-size: 19px;
+    font-size: 18px;
     color: rgba(245,236,217,0.55);
     animation: hintPulse 2s ease-in-out infinite;
   }
+  #s4 { padding-top: 8vh; padding-bottom: 8vh; }
+  #s4 .slate { margin-bottom: 14px; }
+  #s4 .next-btn { margin-top: 18px; }
   @keyframes hintPulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
 
   /* ---------- scene 5: cake ---------- */
@@ -673,7 +676,7 @@
     <div class="dear">Dear Prarthana,</div>
     <!-- ✏️✏️✏️ SHOURYA: EDIT THIS MESSAGE — replace the lines below with your own words. ✏️✏️✏️ -->
     <p>
-      Happy 22nd. Somewhere between your night shifts and my law books,
+      Happy 22nd. Somewhere between your night shifts and my law and history books,
       you became my favourite person. I know we don't get nearly enough
       time together — but every minute with you feels like the best scene
       in the whole film.
@@ -704,7 +707,6 @@
   // ---------- scene 1: timed title sequence ----------
   const introLines = [
     'A SHOURYA PRODUCTION',
-    'AN INDIA–PAKISTAN<br>CO-PRODUCTION',
     'IN ASSOCIATION WITH<br>THE MINISTRY OF BIRTHDAYS',
     'PRESENTS'
   ];
